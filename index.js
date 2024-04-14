@@ -25,7 +25,7 @@ app.get('/challenges', async(req, res) => {
             title,
             url
         })
-       })
+       }).catch(err=> console.log(err))
         res.json(challenges)
     })
 })
